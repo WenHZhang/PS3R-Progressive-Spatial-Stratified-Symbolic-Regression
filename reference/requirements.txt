@@ -1,0 +1,20 @@
+# Dependency manifest only; install in the order documented in README.md.
+numpy==1.19.5
+numba==0.53.1
+pandas
+scipy
+scikit-learn
+torch
+sympy
+click
+deap
+pathos
+seaborn
+tqdm
+PyYAML
+Cython
+commentjson
+prettytable
+progress
+matplotlib
+ipython

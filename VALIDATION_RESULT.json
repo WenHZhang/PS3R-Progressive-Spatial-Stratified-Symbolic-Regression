@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-05",
+  "platform": "Darwin arm64",
+  "version": "0.2.0",
+  "license": "MIT; DSO-derived patches BSD-3-Clause",
+  "tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "build": "wheel and sdist built successfully",
+  "twine_check_strict": "both passed",
+  "original_source_files_unchanged": 21,
+  "model_methods": {
+    "total": 63,
+    "unchanged_ast": 59,
+    "dependency_adaptations": 4
+  },
+  "experiment_computations": "AST matches source after normalizing package imports; CLI orchestration excluded",
+  "installed_verification": {
+    "wheel": {
+      "python": "3.13.5",
+      "version": "0.2.0",
+      "resource_hashes_verified": 14,
+      "validate_all": "passed",
+      "missing_backend_error": "passed",
+      "training_failure_has_no_output": "passed",
+      "dependencies": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.1",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1"
+      },
+      "dependency_source": "new virtual environment; all declared dependencies downloaded and installed"
+    },
+    "sdist": {
+      "python": "3.13.5",
+      "version": "0.2.0",
+      "resource_hashes_verified": 14,
+      "validate_all": "passed",
+      "missing_backend_error": "passed",
+      "training_failure_has_no_output": "passed",
+      "dependencies": {
+        "numpy": "2.1.3",
+        "pandas": "2.2.3",
+        "scipy": "1.15.3",
+        "scikit-learn": "1.6.1"
+      },
+      "dependency_source": "separate virtual environment with existing scientific dependencies; source distribution built and installed without dependency downloads"
+    }
+  },
+  "artifact_sha256": {
+    "ps3r-0.2.0-py3-none-any.whl": "6036fcf28a501eabde892e2d27e59871cf95699eec769a3f46b93a527f2149ce",
+    "ps3r-0.2.0.tar.gz": "5468f1450d22197b6bcfa64a0e41447967bd091a508cf1a7c010886cf7b35470"
+  },
+  "dso_training": "not executed; original external backend required",
+  "publication_checked_separately": true,
+  "artifact_scope": "local release artifacts; GitHub CI rebuilds can have different archive hashes"
+}

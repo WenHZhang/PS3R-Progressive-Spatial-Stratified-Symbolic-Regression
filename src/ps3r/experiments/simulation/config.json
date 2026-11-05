@@ -1,0 +1,177 @@
+{
+   "experiment" : {
+
+      "exp_name" : null,
+
+      "seed" : 666
+   },
+
+   "task" : {
+
+      "task_type" : "regression",
+      "function_set": ["add", "sub", "mul", "div", "abs", "poly"],
+      "protected": true,
+      "metric" : "neg_nmse",
+      "metric_params" : [],
+      "poly_optimizer_params" : {
+         "degree": 1,
+         "coef_tol": 1e-6,
+         "regressor": "dso_least_squares",
+         "regressor_params": {
+            "cutoff_p_value": 1.00,
+            "n_max_terms": null,
+            "coef_tol": 1e-6
+         }
+      }
+   },
+
+   "training" : {
+      "n_samples" : 50000,
+      "batch_size" : 100,
+
+      "epsilon" : 0.1,
+      "baseline" : "R_e",
+
+      "alpha" : 0.5,
+      "b_jumpstart" : false,
+
+      "n_cores_batch" : 1,
+
+      "complexity" : "token",
+
+      "const_optimizer" : "scipy",
+      "const_params" : {
+         "method" : "L-BFGS-B",
+         "options" : {
+            "gtol" : 1e-3
+         }
+      },
+      "verbose" : false,
+
+      "debug" : 0,
+
+      "early_stopping" : true,
+
+      "use_memory" : false,
+      "memory_capacity" : 500,
+      "warm_start" : null,
+      "memory_threshold" : null
+   },
+
+   "logging" : {
+      "save_all_iterations" : false,
+      "save_summary" : false,
+      "save_positional_entropy" : false,
+      "save_pareto_front" : false,
+      "save_cache" : false,
+      "save_cache_r_min" : 0.9,
+      "save_freq" : 1,
+      "save_token_count" : false,
+      "hof" : 0
+   },
+
+   "state_manager": {
+      "type" : "hierarchical",
+      "observe_action" : false,
+      "observe_parent" : true,
+      "observe_sibling" : true,
+      "observe_dangling" : false,
+      "embedding" : false,
+      "embedding_size" : 8
+   },
+
+   "policy" : {
+      
+      "policy_type" : "rnn", 
+
+      "max_length" : 64,
+      
+      "cell" : "lstm",
+      "num_layers" : 1,
+      "num_units" : 32,
+      "initializer" : "var_scale"
+   },
+
+   "policy_optimizer" : {
+
+      "policy_optimizer_type" : "pg", 
+
+      "summary" : false,
+
+      "learning_rate" : 0.0005,
+      "optimizer" : "adam",
+
+      "entropy_weight" : 0.05,
+      "entropy_gamma" : 0.7
+   },
+
+   "gp_meld" : {
+      "run_gp_meld" : false,
+      "verbose" : false,
+      "generations" : 20,
+      "p_crossover" : 0.5,
+      "p_mutate" : 0.5,
+      "tournament_size" : 5,
+      "train_n" : 50,
+      "mutate_tree_max" : 3,
+      "parallel_eval" : false
+   },
+
+
+   "prior": {
+      "count_constraints" : false,
+      "relational" : {
+         "targets" : [],
+         "effectors" : [],
+         "relationship" : null,
+         "on" : false
+      },
+      "length" : {
+         "min_" : 4,
+         "max_" : 64,
+         "on" : true
+      },
+      "repeat" : {
+         "tokens" : "const",
+         "min_" : null,
+         "max_" : 3,
+         "on" : true
+      },
+      "inverse" : {
+         "on" : false
+      },
+      "trig" : {
+         "on" : false
+      },
+      "const" : {
+         "on" : true
+      },
+      "no_inputs" : {
+         "on" : false
+      },
+      "uniform_arity" : {
+         "on" : false
+      },
+      "soft_length" : {
+         "loc" : 10,
+         "scale" : 5,
+         "on" : true
+      },
+      "domain_range" : {
+         "on" : false
+      },
+      "language_model" : {
+         "weight" : null,
+         "on" : false
+      },
+      "multi_discrete" : {
+         "dense" : false,
+         "ordered" : false,
+         "on" : false
+      }
+   },
+   "postprocess" : {
+      "show_count" : 5,
+      "save_plots" : true
+   }
+}

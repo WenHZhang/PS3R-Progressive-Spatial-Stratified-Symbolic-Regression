@@ -1,0 +1,132 @@
+{
+  "source": "AAAG final/code&data",
+  "packaging_date": "2026-11-05",
+  "files": [
+    {
+      "original": "README.md",
+      "sha256": "e7052d755321a72a5b2d8fd6fe0039139ec85530865e7bd26535653e0f175370",
+      "packaged": "reference/README.md",
+      "adapted": false
+    },
+    {
+      "original": "bd/SOCS_V10_spatial_block_5fold_354571m.csv",
+      "sha256": "428363b940af7bef28b6cdbf07ad52e65ce13da2db2dae53760e8384508b9f70",
+      "packaged": "src/ps3r/experiments/bd/SOCS_V10_spatial_block_5fold_354571m.csv",
+      "adapted": false
+    },
+    {
+      "original": "bd/config.json",
+      "sha256": "938ae0599270139d5b7f6ead9e4d606508885024c7006533a50d41fbd3e5b732",
+      "packaged": "src/ps3r/experiments/bd/config.json",
+      "adapted": false
+    },
+    {
+      "original": "bd/run_bd.py",
+      "sha256": "76e0f78fe98b4af68d4e39acb6802c7301cd7719d3b472c4b93b7ec142b3fdfd",
+      "packaged": "src/ps3r/experiments/bd/run_bd.py",
+      "adapted": true
+    },
+    {
+      "original": "dso_fix/core.py",
+      "sha256": "3057b6149063dd3e128931aa4b77c86ad447e3c18b53666b7cea7437d1510590",
+      "packaged": "src/ps3r/patches/core.py",
+      "adapted": false
+    },
+    {
+      "original": "dso_fix/program.py",
+      "sha256": "740861340f1149ca95621c7ae939bad6c3de37fd11ebbb56dbb061fc6f5f6ad2",
+      "packaged": "src/ps3r/patches/program.py",
+      "adapted": false
+    },
+    {
+      "original": "dso_fix/sklearn.py",
+      "sha256": "00d1c6e02f5e47b813b4a21ea2f104136a72fda233bb9afeca5d3c234adea46d",
+      "packaged": "src/ps3r/patches/sklearn.py",
+      "adapted": false
+    },
+    {
+      "original": "dso_fix/train.py",
+      "sha256": "a79f67eee82b738dd2443247fc77081af9ce0fd0fdc52f5642e609b4aff42931",
+      "packaged": "src/ps3r/patches/train.py",
+      "adapted": false
+    },
+    {
+      "original": "model_ps3r.py",
+      "sha256": "dcbbd69672359ffe399b4dc87bca3376bae49970cd85b5a4763a95e7bb54568c",
+      "packaged": "reference/model_ps3r.py",
+      "adapted": false
+    },
+    {
+      "original": "requirements.txt",
+      "sha256": "ef58cbd797de84112d91d7302246c588aec384fe4bff40a140d3a69aebbae7d6",
+      "packaged": "reference/requirements.txt",
+      "adapted": false
+    },
+    {
+      "original": "simulation/config.json",
+      "sha256": "938ae0599270139d5b7f6ead9e4d606508885024c7006533a50d41fbd3e5b732",
+      "packaged": "src/ps3r/experiments/simulation/config.json",
+      "adapted": false
+    },
+    {
+      "original": "simulation/generate_simulation_data.ipynb",
+      "sha256": "d75c19dc41d79593ee2e8c736013eb8e05a59bef931f0396d7ae05bded0bbc33",
+      "packaged": "src/ps3r/experiments/simulation/generate_simulation_data.ipynb",
+      "adapted": false
+    },
+    {
+      "original": "simulation/run_simulation.py",
+      "sha256": "05f7fdedef3ab2fa0fc10f595b60ded0e44450207c7d9d190fb7d2dd98e1a1f8",
+      "packaged": "src/ps3r/experiments/simulation/run_simulation.py",
+      "adapted": true
+    },
+    {
+      "original": "simulation/simulation_data.csv",
+      "sha256": "2197bd1ab5c446f242085e71e09e014dfd8181267d826fff4655f6cb8b25179e",
+      "packaged": "src/ps3r/experiments/simulation/simulation_data.csv",
+      "adapted": false
+    },
+    {
+      "original": "socd/config.json",
+      "sha256": "938ae0599270139d5b7f6ead9e4d606508885024c7006533a50d41fbd3e5b732",
+      "packaged": "src/ps3r/experiments/socd/config.json",
+      "adapted": false
+    },
+    {
+      "original": "socd/run_socd.py",
+      "sha256": "bbf9e940ee784b162d3722361240681493129deaa0c9594dd1b572d5463066c4",
+      "packaged": "src/ps3r/experiments/socd/run_socd.py",
+      "adapted": true
+    },
+    {
+      "original": "socd/test_datasetv10_profile20_cf1.csv",
+      "sha256": "50b39a793aa5769077c3d77a3ae2ee4030b8bfff89dbb78d22ebdefdd6c0aca0",
+      "packaged": "src/ps3r/experiments/socd/test_datasetv10_profile20_cf1.csv",
+      "adapted": false
+    },
+    {
+      "original": "socd/test_datasetv10_profile20_full.csv",
+      "sha256": "7cfbdee68ab69e4e35624b2392f6d164fcaeaea95b2444f03238c05c6c27e465",
+      "packaged": "src/ps3r/experiments/socd/test_datasetv10_profile20_full.csv",
+      "adapted": false
+    },
+    {
+      "original": "socd/train_datasetv10_profile80_cf1.csv",
+      "sha256": "604aaee78d34cbeef39f15028779177b03f2fe44ba2ac05db2e388221b116204",
+      "packaged": "src/ps3r/experiments/socd/train_datasetv10_profile80_cf1.csv",
+      "adapted": false
+    },
+    {
+      "original": "socd/train_datasetv10_profile80_full.csv",
+      "sha256": "5af00b48c5c1e1a23b13a0e3f202869e5882cfaaa94142196113f2b01fcd47d3",
+      "packaged": "src/ps3r/experiments/socd/train_datasetv10_profile80_full.csv",
+      "adapted": false
+    },
+    {
+      "original": "utils_dso.py",
+      "sha256": "d1a12a0f87709c15469c5a5653f5115b28a5c222d38a1bb76650d06ba5cd877e",
+      "packaged": "reference/utils_dso.py",
+      "adapted": false
+    }
+  ]
+}

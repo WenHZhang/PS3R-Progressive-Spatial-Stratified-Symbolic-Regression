@@ -1,0 +1,7 @@
+include README.md README_zh.md RELEASE_NOTES.md pyproject.toml LICENSE THIRD_PARTY_NOTICES.md
+recursive-include docs *.md *.txt *.json
+recursive-include reference *.py *.md *.txt
+recursive-include tests *.py
+recursive-include src/ps3r *.py *.json *.csv *.ipynb *.md
+global-exclude .DS_Store *.pyc
+prune .venv

@@ -128,6 +128,6 @@ and packaging tests. `ps3r/PROVENANCE.json` records original file hashes.
 See [release notes](RELEASE_NOTES.md), [validation scope](docs/VALIDATION.md),
 and [publishing instructions](docs/PUBLISHING.md).
 
-PS3R is released under the [MIT license](LICENSE), as selected by the author.
+PS3R is released under the [MIT license](LICENSE).
 The included DSO-derived patches retain their upstream BSD-3-Clause terms;
 see [third-party notices](THIRD_PARTY_NOTICES.md).

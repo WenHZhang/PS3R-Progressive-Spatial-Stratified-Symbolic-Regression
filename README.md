@@ -1,7 +1,6 @@
 # ps3r
 
-Progressive Spatial Stratified Symbolic Regression (PS3R), packaged from the
-AAAG final `code&data` release, for interpretable modeling of variable relationships.
+Progressive Spatial Stratified Symbolic Regression (PS3R) for interpretable modeling of variable relationships.
 The package contains the shared model, three
 experiment runners, all six input CSV files, configuration templates, the
 simulation-generation notebook, and four original PyTorch DSO patches.
@@ -10,7 +9,7 @@ See [中文安装说明](README_zh.md) for instructions in Chinese.
 
 ## Installation and import
 
-Use Python 3.8 or later. Once this release is published on PyPI:
+Use Python 3.8:
 
 ```bash
 python -m pip install ps3r

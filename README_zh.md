@@ -1,9 +1,5 @@
 # ps3r 安装与使用
 
-这是根据 AAAG `final/code&data` 制作的 Python 包，名称为 `ps3r`，版本为
-`0.2.0`。包含共享模型、BD/SOCD/模拟实验入口、六份输入 CSV、三份配置、
-模拟数据生成 notebook，以及原有四份 DSO 补丁。
-
 ## 1. 安装与导入
 
 使用 Python 3.8 或更高版本。在 PyPI 正式上传成功后，可以运行：
@@ -62,7 +58,7 @@ ps3r-simulation --output-dir ./results/simulation --seeds 0 1 2 3 4
 
 不指定输出目录时，结果保存到当前工作目录下的时间戳目录，避免写入 Python 安装目录。
 BD 保留五个预先划定的空间折和模型种子 0；SOCD、模拟实验保留固定训练/测试划分及
-种子 0–4。数据、随机种子和模型计算逻辑均来自用户指定的 `final/code&data`。
+种子 0–4。
 
 ## 4. 读取和导出数据
 
@@ -111,5 +107,5 @@ y_pred = model.predict(X_test)
 - `docs/VALIDATION.md`：本次实际验证范围。
 - `docs/PUBLISHING.md`：GitHub 与 PyPI 发布步骤。
 
-PS3R 按作者指定采用 [MIT 许可证](LICENSE)。DSO 衍生补丁保留上游 BSD-3-Clause
+PS3R 采用 [MIT 许可证](LICENSE)。DSO 衍生补丁保留上游 BSD-3-Clause
 许可，见 [第三方声明](THIRD_PARTY_NOTICES.md)。
